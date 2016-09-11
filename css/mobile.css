@@ -1,0 +1,24 @@
+html {
+	background: #666;
+}
+
+body {
+	margin: 0.5em;
+	font-size: small;
+}
+
+h1 {
+	font-size: 150%;
+}
+
+#content {
+	width: 100%;
+	padding: 0;
+}
+
+#profile {
+	float: left;
+	display: block;
+	margin: 5px 5px 5px 0;
+	border: 1px solid #999;
+}

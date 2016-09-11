@@ -1,0 +1,11 @@
+html {
+	background: none;
+	-webkit-background-size: auto;
+	-moz-background-size: auto;
+	-o-background-size: auto;
+	background-size: auto;
+}
+
+body {
+	background: #666 url(img/craig-mcnaughton-2011-ie.jpg) no-repeat bottom right fixed;
+}

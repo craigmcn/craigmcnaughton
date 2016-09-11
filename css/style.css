@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: #666 url(img/craig-mcnaughton-2011.jpg) no-repeat bottom right fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: medium;
+	color: #ddd;
+}
+
+h1 {
+	margin: 1em 0 0.5em 0;
+	font-size: 240%;
+	text-shadow: 2px 1px 1px rgba(51, 51, 51, 1);
+}
+
+h2 {
+	clear: both;
+	margin: 0.5em 0;
+	text-shadow: 2px 1px 1px rgba(51, 51, 51, 1);
+}
+
+p {
+	clear: both;
+	margin: 1em 0;
+	line-height: 1.6em;
+}
+
+a {
+	color: #bbb;
+}
+
+a:hover {
+	color: #fff;
+}
+
+a img {
+	border: none;
+}
+
+#content {
+	width: 51%;
+	padding: 2em;
+}
+
+#profile {
+	display: none;
+}
