@@ -1,2 +1,4 @@
 backup 2016-09-11
 **/.DS_Store
+**/*.scssc
+node_modules/*

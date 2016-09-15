@@ -1,0 +1,116 @@
+header {
+  background: #959ca9;
+  border-bottom: 1px solid #111621;
+  color: #111621;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  h1 {
+    font-size: 1.3em;
+    margin: 1em 0
+  }
+  div:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  ul {
+    font-size: 1.3em;
+    margin: 0.67em 0;
+    padding: 0
+  }
+  li {
+    display: inline-block;
+    text-align: center
+  }
+}
+
+a.fa {
+  color: #111621;
+  display: block;
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  &.fa-envelope:hover {
+    color: #303d24;
+  }
+  &.fa-facebook-official:hover {
+    color: #3b5998;
+  }
+  &.fa-github:hover {
+    color: #efefef;
+  }
+  &.fa-linkedin:hover {
+    color: #0077b5;
+  }
+  &.fa-twitter:hover {
+    color: #1da1f2;
+  }
+  &.fa-user:hover {
+    color: #ff6600;
+  }
+}
+
+button {
+  background-color: #303d24;
+  color: #efefef;
+  &:hover {
+    background-color: #79995a;
+    color: #efefef;
+  }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+.lede {
+  font-size: 110%
+}
+
+.content {
+  background-color: #efefef;
+  border-bottom: 1px solid #2b3953;
+  padding: 1em 0;
+  &.secondary {
+    background-color: #bcccad;
+  }
+}
+
+.parallax {
+  height: 480px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.parallax-hero {
+  background-image: url("http://assets.craigmcnaughton.ca/img/profile-2014.jpg");
+}
+
+@media all and (min-width: 992px) {
+  .wrapper {
+    padding: 0
+  }
+}
+
+@media all and (min-width: 600px) {
+  header h1 {
+    float: left;
+    width: 50%
+  }
+  header ul {
+    float: right;
+    text-align: right;
+    width: 50%
+  }
+  form {
+    width: 66.667%
+  }
+  .parallax {
+    height: 600px
+  }
+}
