@@ -79,7 +79,7 @@
 
     if (window.location.search == '?c=thanks') {
         var el = document.querySelectorAll('#contact form');
-        el[0].insertAdjacentHTML('beforebegin', '<p class="lede"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Thanks for contacting me! I\'ll get back to you soon.</p>');
+        el[0].insertAdjacentHTML('beforebegin', '<p class="lead"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> Thanks for contacting me! I\'ll get back to you soon.</p>');
     }
 
  })();
