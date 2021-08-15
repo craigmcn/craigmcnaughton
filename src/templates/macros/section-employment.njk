@@ -1,0 +1,43 @@
+<!-- only one parameter - the JSON object - which is applied to macro using dot notation -->
+{%- macro employmentSection(arguments) %}
+  <article class="mb-6">
+
+    <div class="flex flex-col mb-2">
+      {% if (arguments.title | isArray) %}
+        {% for title in arguments.title %}
+          <div class="flex items-baseline mb-0">
+            <span class="font-bold">{{ title }}</span>
+            <span class="text-sm text-gray-500 ml-auto">{{ arguments.dates[loop.index - 1] }}</span>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="flex items-baseline mb-0">
+          <span class="font-bold">{{ arguments.title }}</span>
+          <span class="text-sm text-gray-500 ml-auto">{{ arguments.dates }}</span>
+        </div>
+      {% endif %}
+      <div class="flex items-baseline mb-0 text-gray-500">
+        <span>
+          {% if arguments.department %}
+            {{ arguments.department }},
+          {% endif %}
+          {{ arguments.organization }}
+        </span>
+        <span class="text-sm ml-auto">{{ arguments.location }}</span>
+      </div>
+    </div>
+
+    {% if arguments.achievements | length %}
+      <ul class="list-inside list-square">
+        {% for achievement in arguments.achievements %}
+          <li>{{ achievement }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+    <ul class="list-inside list-disc ml-4">
+      {% for duty in arguments.duties %}
+        <li>{{ duty }}</li>
+      {% endfor %}
+    </ul>
+  </article>
+{%- endmacro %}

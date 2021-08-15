@@ -1,0 +1,118 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Resumé - Craig McNaughton</title>
+	<meta name="keywords" content="Craig McNaughton, software developer, sotware development, portfolio, resume, resumé">
+	<meta name="description" content="Craig McNaughton's software developer resumé">
+{% endblock %}
+
+{% block styles %}
+  <link rel="stylesheet" href="css/styles.css">
+{% endblock %}
+
+{% block content %}
+<main class="container mx-auto md:max-w-3xl">
+	<h1 class="text-2xl">Craig McNaughton</h1>
+	<p>craig at craigmcnaughton dot ca</p>
+
+	<section class="mt-6">
+		<h2 class="text-sm uppercase py-2 text-gray-700">Summary</h2>
+		<p>In 14 years as a software developer, seven years in technical support and documentation, I have developed significant skills in managing projects, challenges and customer service. My education as an engineer and as a technical writer complements those skills with an ability to see documentation and technology from the end-user perspective. I keep myself updated on best practices and changing technology to ensure that I can provide the best product possible.</p>
+	</section>
+
+	<section class="mt-6 border-t">
+		<h2 class="text-sm uppercase py-2 text-gray-700">Employment</h2>
+		{% set employmentData %}
+			{% include 'data/employment.json' %}
+		{% endset %}
+		{% import 'macros/section-employment.njk' as employment %}
+		{% set compiled = (employmentData | json) %}
+		{% for items in compiled %}
+			{{ employment.employmentSection(items) }}
+		{% endfor %}
+
+	</section>
+
+	<section class="mt-6 border-t">
+		<h2 class="text-sm uppercase py-2 text-gray-700">Education</h2>
+
+		<article class="mb-6">
+			<div class="flex flex-col mb-2">
+				<div class="flex mb-0">
+					<span class="font-bold">Technical Writing Certificate</span>
+					<span class="text-sm text-gray-500 ml-auto">2006 to 2008</span>
+				</div>
+				<div class="flex items-baseline mb-0 text-gray-500">
+					<span>
+						Humber College Institute of Technology & Advanced Learning
+					</span>
+					<span class="text-sm ml-auto">Toronto, Ontario</span>
+				</div>
+			</div>
+			<ul class="list-inside list-square">
+					<li>Completed with honours</li>
+			</ul>
+			<ul class="list-inside list-disc ml-4">
+				<li>Technical writing fundamentals, including editing, project management, marketing and HTML</li>
+			</ul>
+		</article>
+
+		<article class="mb-6">
+			<div class="flex flex-col mb-2">
+				<div class="flex mb-0">
+					<span class="font-bold">Bachelor of Science in Engineering</span>
+					<span class="text-sm text-gray-500 ml-auto">1992 to 1997</span>
+				</div>
+				<div class="flex items-baseline mb-0 text-gray-500">
+					<span>
+						University of Saskatchewan
+					</span>
+					<span class="text-sm ml-auto">Saskatoon, Saskatchewan</span>
+				</div>
+			</div>
+			<ul class="list-inside list-square">
+				<li>Chemical Engineering</li>
+			</ul>
+		</article>
+	</section>
+
+	<section class="mt-6 border-t">
+		<h2 class="text-sm uppercase py-2 text-gray-700">Skills</h2>
+
+		<h3 class="text-sm py-2 text-gray-700">Technical</h3>
+
+		<ul class="list-inside list-square">
+			<li>Web development: Grails, PHP, ASP, HTML, Javascript/TypeScript, VBScript, jQuery
+				<ul class="list-inside list-disc ml-4">
+					<li>Environments: Dreamweaver, EditPlus, IntelliJ, Sublime Text, UltraEdit, Visual Studio Code</li>
+				</ul>
+			</li>
+			<li>Web design: CSS, SASS; Photoshop, GIMP</li>
+			<li>Frameworks: Bootstrap, React, Tailwind</li>
+			<li>Database: Access, MySQL, SQL Server, GraphQL</li>
+			<li>Content management: Cascade, Ektron CMS300, Microsoft Sharepoint, Wordpress</li>
+			<li>Operating systems: IBM OS/2 Warp , Linux, Mac, MS-DOS, Windows</li>
+			<li>Word processing: OpenOffice Writer, Pages, Word, WordPerfect, Works</li>
+			<li>Spreadsheet: Excel, Lotus 1-2-3, Numbers, OpenOffice Calc, Quattro Pro</li>
+			<li>Presentation: Keynote, OpenOffice Impress, PowerPoint</li>
+			<li>Project management: Microsoft Project, Agile principles</li>
+			<li>Scheduling: EnCampus Suite (Infosilem)</li>
+		</ul>
+		
+		<h3 class="text-sm py-2 text-gray-700">Portfolio</h3>
+
+		<ul class="list-inside list-square mb-6">
+			<li><a class="underline" href="https://www.ppfhouse.com/">ppfhouse.com</a>: a combination of websites for three brothers providing music, art, animation and video services</li>
+			<li><a class="underline" href="https://github.com/craigmcn/">github.com/craigmcn</a>: personal Github repository of projects and interests</li>
+			<li><a class="underline" href="https://www.craigmcn.com/">craigmcn.com</a>: personal projects</li>
+		</ul>
+
+		<ul class="list-inside list-square mb-6">
+			<li>Perform hardware and software maintenance and upgrades on personal computers</li>
+			<li>Developed Visual Basic macros at CIBC for automation, ease-of-use and consistency in applications</li>
+			<li>Developed and maintained information database at CIBC</li>
+			<li>Developed and maintained word-processing and spreadsheet documents for Accounting, Food and Beverage, Front Office and Housekeeping departments at the Fairmont Banff Springs</li>
+		</ul>
+	</section>
+</main>
+{% endblock %}
