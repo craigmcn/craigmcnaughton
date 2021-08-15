@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/currency/*"
+  to = "https://keen-haibt-ecf9f4.netlify.app/:splat"
+  status = 200
+  force = true
+ 
+[[redirects]]
+  from = "/albertcss/*"
+  to = "https://nifty-turing-6bafb1.netlify.app/:splat"
+  status = 200
+  force = true
