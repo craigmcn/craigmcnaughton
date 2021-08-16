@@ -1,11 +1,23 @@
 [[redirects]]
+  from = "/albertcss/*"
+  to = "https://nifty-turing-6bafb1.netlify.app/albertcss/:splat"
+  status = 200
+  force = true
+ 
+[[redirects]]
   from = "/currency/*"
   to = "https://keen-haibt-ecf9f4.netlify.app/currency/:splat"
   status = 200
   force = true
  
 [[redirects]]
-  from = "/albertcss/*"
-  to = "https://nifty-turing-6bafb1.netlify.app/albertcss/:splat"
+  from = "/markdown/*"
+  to = "https://hardcore-wiles-1aa5f7.netlify.app/markdown/:splat"
+  status = 200
+  force = true
+ 
+[[redirects]]
+  from = "/unixtime/*"
+  to = "https://xenodochial-euclid-5aa925.netlify.app/unixtime/:splat"
   status = 200
   force = true
