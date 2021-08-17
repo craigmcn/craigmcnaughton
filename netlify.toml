@@ -5,6 +5,12 @@
   force = true
  
 [[redirects]]
+  from = "/cryptogram/*"
+  to = "https://agitated-nightingale-d3b1fa.netlify.app/cryptogram/:splat"
+  status = 200
+  force = true
+ 
+[[redirects]]
   from = "/currency/*"
   to = "https://keen-haibt-ecf9f4.netlify.app/currency/:splat"
   status = 200
