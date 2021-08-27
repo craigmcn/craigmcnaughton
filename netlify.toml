@@ -51,3 +51,9 @@ from = "/unixtime/*"
 to = "https://xenodochial-euclid-5aa925.netlify.app/unixtime/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/words/*"
+to = "https://gracious-hamilton-bcda9d.netlify.app/words/:splat"
+status = 200
+force = true
