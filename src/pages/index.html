@@ -1,34 +1,282 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-  <main class="main main--fixed">
-    <section class="section">
-      <h1>Title jumbotron</h1>
+    <section class="p-v-xl flex flex--column flex--ai-center"
+        style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/19/Arbutus_Tree_%287743626674%29.jpg); background-size: cover"
+        title="David Stanley from Nanaimo, Canada, CC BY 2.0 <https://creativecommons.org/licenses/by/2.0>, via Wikimedia Commons; https://commons.wikimedia.org/wiki/File:Arbutus_Tree_(7743626674).jpg"
+    >
+        <img class="img img--round img--border img--padded" src="./img/craigmcn.jpeg" width="400" alt="Craig McNaughton and his Cocker Spaniel, Simon Waffles" title="Craig McNaughton">
+        <p class="m-v-md p-md" style="backdrop-filter: blur(4px); background-color: rgba(54, 54, 64,.4); border-radius: 4px; color: var(--grey100); max-width: 60em">Front-end web developer excited about creating helpful applications built on microservices to save users time and money.</p>
     </section>
 
-    <section class="section section--alt">
-      <h2>Personal style guide</h2>
-      <p><a href="/albertcss/">Albert CSS</a></p>
-    </section>
+    <main class="main main--fixed m-t-0">
 
-    <section class="section">
-      <h2>Currency converter</h2>
-      <a href="/currency/">Currency</a>
-    </section>
+        <section class="section m-t-xl">
+            <div class="flex">
+                <a class="flex__item flex__item--fixed m-r-md m-b-md" href="/albertcss/">
+                    <img class="img img--default" src="./img/albertcss.png" width="320">
+                </a>
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/albertcss/">Albert CSS</a>
+                        <small class="text--muted">a personal CSS framework</small>
+                    </h2>
+                    <p>Two things: I lived on Albert Avenue, and I wanted to build my own CSS
+                    &ldquo;framework&rdquo;. Out of this was born Albert CSS. Based very
+                    much on <a href="https://getbootstrap.com/docs/4.6/getting-started/introduction/">Bootstrap</a>
+                    circa v4, I built a reasonably simple framework that
+                    covers (so far) every use case I&rsquo;ve come across.</p>
+                </div>
+            </div>
 
-    <section class="section section--alt">
-      <h2>Markdown parser</h2>
-      <a href="/markdown/">Markdown</a>
-    </section>
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"></li>
+                <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS3"></li>
+                <li><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+                    alt="SASS"></li>
+                <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></li>
+                <li><img src="https://img.shields.io/badge/-Gulp-red?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC&logoColor=white"
+                    alt="Gulp"></li>
+            </ul>
+        </section>
 
-    <section class="section">
-      <h2>Unix timestamp converter</h2>
-      <a href="/unixtime/">Unixtime</a>
-    </section>
+        <section class="section section--alt">
+            <div class="flex">
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/currency/">Currency converter</a>
+                    </h2>
+                    <p>This should probably be first, because I&rsquo;ve given it the most
+                    attention. I created it for an interview for a React-Redux developer
+                    position. It was originally a pretty bare-bones
+                    <code>create-react-app</code> application, with some API calls to
+                    get countries and exchange rates. I whipped it up in less than a
+                    day.</p>
+                    <p>I got the job and the codebase was in TypeScript, so I thought
+                    I&rsquo;d add it here. I think <code>create-react-app</code> can
+                    include TypeScript now, but I don&rsquo;t recall being able to do it
+                    easily when I first tried, so I just rebuilt the whole application
+                    without <code>create-react-app</code>.</p>
+                    <p>As I continued working in React with hooks, I realized this would
+                    be a great (maybe not ideal) use of <code>useContext</code> and
+                    <code>useReducer</code> hooks. So that&rsquo;s where it is now.</p>
+                    <p>I also got stuck using a free API without an HTTPS endpoint, so I
+                    whipped up a reverse proxy using AWS API Gateway. It was super-easy
+                    and totally did the trick.</p>
+                </div>
+                <a class="flex__item flex__item--fixed m-l-md m-b-md" href="/currency/">
+                    <img class="img img--default" src="./img/currency.png" width="320">
+                </a>
+            </div>
 
-    <section class="section section--alt">
-      <h2>Cryptogram helper</h2>
-      <a href="/cryptogram/">Cryptogram</a>
-    </section>
-  </main>
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                    alt="React"></li>
+                <li><img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"
+                    alt="TypeScript"></li>
+                <li><img src="https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black"
+                    alt="Webpack"></li>
+                <li><img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white"
+                    alt="Amazon AWS"></li>
+                <li><img src="https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"
+                    alt="SASS"></li>
+                <li><img src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white"
+                    alt="FontAwesome"></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="flex">
+                <a class="flex__item flex__item--fixed m-r-md m-b-md" href="/markdown/">
+                    <img class="img img--default" src="./img/markdown.png" width="320">
+                </a>
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/markdown/">Markdown parser</a>
+                    </h2>
+                    <p>I&rsquo;m awkwardly in love with <a
+                        href="https://daringfireball.net/projects/markdown/">Markdown</a>, but I&rsquo;m never
+                    completely confident I get it right. I first built a parser that put the resulting HTML secondary,
+                    but over time wanted to convert from HTML to Markdown. The library I was already using, <a
+                        href="http://showdownjs.com/">Showdown</a>, already provided the two-way functionality, I just
+                    needed the interface.</p>
+                </div>
+            </div>
+
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"></li>
+                <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS3"></li>
+                <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></li>
+                <li><img src="https://img.shields.io/badge/-Gulp-red?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC&logoColor=white"
+                    alt="Gulp"></li>
+                <li><img src="https://img.shields.io/badge/Markdown-000000?style=for-the-badge&logo=markdown&logoColor=white"
+                    alt="Markdown"></li>
+            </ul>
+        </section>
+
+        <section class="section section--alt">
+            <div class="flex">
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/unixtime/">Unix timestamp converter</a>
+                    </h2>
+                    <p>I was reasonably happy using <a href="https://www.unixtimestamp.com/">unixtimestamp.com</a> for all
+                    my <a href="https://en.wikipedia.org/wiki/Unix_time">Unix time</a> needs, but found that I needed a
+                    timezone element and wanted natural language parsing. I combined a couple of libraries and utilities
+                    to get this beautiful result.</p>
+                </div>
+                <a class="flex__item flex__item--fixed m-l-md m-b-md" href="/unixtime/">
+                    <img class="img img--default" src="./img/unixtime.png" width="320">
+                </a>
+            </div>
+
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"></li>
+                <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS3"></li>
+                <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></li>
+                <li><img src="https://img.shields.io/badge/-Gulp-red?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC&logoColor=white"
+                    alt="Gulp"></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="flex">
+                <a class="flex__item flex__item--fixed m-r-md m-b-md" href="/colours/">
+                    <img class="img img--default" src="./img/colours.png" width="320">
+                </a>
+                <div class="flex__item">
+                    <h2>
+                        <a href="/colours/">Colour contrast and opacity tool</a>
+                    </h2>
+                    <p>I don&rsquo;t recall exactly the problem, but I believe in part of my work I was trying to
+                    differentiate elements and components with a limited colour palette. I found I needed to check
+                    regularly whether a colour combination provided enough contrast to be accessible. I found a number
+                    of tools, but nothing I really liked. I ended up building my own.</p>
+                    <p>The next thing was personal. I found myself regularly trying to figure out a colour that was the
+                    result of a semi-transparent foreground colour over an opaque background. Once I worked out the
+                    calculations, it was a simple matter of building an iterface for the variables.</p>
+                </div>
+            </div>
+
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"></li>
+                <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS3"></li>
+                <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></li>
+                <li><img src="https://img.shields.io/badge/-Nunjucks-3d8137?style=for-the-badge" alt="Nunjucks"></li>
+                <li><img src="https://img.shields.io/badge/-Gulp-red?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC&logoColor=white"
+                    alt="Gulp"></li>
+            </ul>
+        </section>
+
+        <section class="section section--alt">
+            <div class="flex">
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/math-tiles/">Math tiles</a>
+                    </h2>
+                    <p>When my 7-year-old brought home some number tiles and some
+                    exercises we were supposed to do to help him learn numbers and math,
+                    I saw a good idea for a web app.</p>
+                    <p>I created some simple exercises (e.g., how much is X + Y, which
+                    number is between two numbers) and threw in the
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/SpeechSynthesis">
+                            <code>SpeechSynthesis</code>
+                        </a>
+                    interface of the
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API">Web Speech API</a>
+                    to help with reading the instructions.</p>
+                </div>
+                <a class="flex__item flex__item--fixed m-l-md m-b-md" href="/math-tiles/">
+                    <img class="img img--default" src="./img/math-tiles.png" width="320">
+                </a>
+            </div>
+
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB"
+                    alt="React"></li>
+                <li><img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"
+                    alt="Tailwind CSS"></li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <div class="flex">
+                <a class="flex__item flex__item--fixed m-r-md m-b-md" href="/words/">
+                    <img class="img img--default" src="./img/words.png" width="320">
+                </a>
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/words/">Words</a>
+                    </h2>
+                    <p>Credit where credit is due, the game play idea here and letter dice
+                    values come from
+                    <a href="http://wonderfulwordweaving.com/">Wonderful Word
+                        Weaving</a>.</p>
+                    <p>When I first saw the game played, with letter dice rolled out and
+                    words being constructed, as with Math tiles, I saw a fairly simple web app. I might have
+                    said something to that effect and my mom responded that if it was
+                    available on her phone, she'd never put her phone down.
+                    Sorry, Mom.</p>
+                </div>
+            </div>
+
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"></li>
+                <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS3"></li>
+                <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></li>
+                <li><img src="https://img.shields.io/badge/-Service_Workers-4285f4?style=for-the-badge"
+                    alt="Service Workers"></li>
+                <li><img src="https://img.shields.io/badge/-Gulp-red?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC&logoColor=white"
+                    alt="Gulp"></li>
+            </ul>
+        </section>
+
+        <section class="section section--alt">
+            <div class="flex">
+                <div class="flex__item">
+                    <h2 class="m-t-0">
+                        <a href="/cryptogram/">Cryptogram helper</a>
+                    </h2>
+                    <p>I love <a href="https://api.razzlepuzzles.com/cryptogram">cryptogram puzzles</a>.
+                    I used to do them on paper, from books of puzzles. But every so
+                    often one of them would stump me and I&rsquo;d end up scribbling or
+                    using white-out or erasing and tearing the pages. So I built myself
+                    a little web app where I can put in the puzzle text and then work
+                    through the solution in an easily-edited way.</p>
+                </div>
+                <a class="flex__item flex__item--fixed m-l-md m-b-md" href="/cryptogram/">
+                    <img class="img img--default" src="./img/cryptogram.png" width="320">
+                </a>
+            </div>
+
+            <ul class="flex flex--jc-center m-v-sm m-l-0" style="gap: 1rem; list-style-type: none">
+                <li><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"
+                    alt="HTML5"></li>
+                <li><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"
+                    alt="CSS3"></li>
+                <li><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"
+                    alt="Javascript"></li>
+                <li><img src="https://img.shields.io/badge/-Service_Workers-4285f4?style=for-the-badge"
+                    alt="Service Workers"></li>
+                <li><img src="https://img.shields.io/badge/-Gulp-red?style=for-the-badge&logo=data%3Aimage%2Fpng%3Bbase64%2CiVBORw0KGgoAAAANSUhEUgAAAAYAAAAOCAMAAAA7QZ0XAAAABlBMVEUAAAD%2F%2F%2F%2Bl2Z%2FdAAAAAXRSTlMAQObYZgAAABdJREFUeAFjAAFGRjSSEQzwUgwQkjAFAAtaAD0Ls2nMAAAAAElFTkSuQmCC&logoColor=white"
+                    alt="Gulp"></li>
+            </ul>
+        </section>
+
+    </main>
 {% endblock %}

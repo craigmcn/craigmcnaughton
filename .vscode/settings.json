@@ -1,0 +1,11 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    "eslint.validate": [
+        "javascript"
+    ],
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": false,
+    "files.insertFinalNewline": true,
+}

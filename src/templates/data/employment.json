@@ -1,125 +1,125 @@
 [
-  {
-    "title": "UI developer",
-    "organization": "EducationPlannerBC",
-    "location": "Victoria, British Columbia",
-    "dates": "October 2019 to present",
-    "duties": [
-      "Develop and maintain user interfaces for two separate products, using React-Redux frameworks and REST microservices",
-      "Consult with multiple stakeholders to determine requirements and evaluate outcomes"
-    ]
-  },
-  {
-    "title": "Software developer",
-    "organization": "University of Victoria",
-    "department": "University Systems",
-    "location": "Victoria, British Columbia",
-    "dates": "April 2016 to October 2019",
-    "duties": [
-      "Analyzed, designed, developed, enhanced, maintained and supported enterprise information systems",
-      "Created documentation related to the implementation of information systems",
-      "Consulted with and trained technical and functional staff on the use of enterprise information systems"
-    ]
-  },
-  {
-    "title": "Programmer",
-    "organization": "University of Saskatchewan",
-    "department": "Student and Enrolment Services",
-    "location": "Saskatoon, Saskatchewan",
-    "dates": "October 2011 to April 2016",
-    "duties": [
-      "Developed and maintained internal web forms and web applications",
-      "Consulted with multiple stakeholders to determine requirements and evaluate outcomes"
-    ]
-  },
-  {
-    "title": "Programmer",
-    "organization": "University of Saskatchewan",
-    "department": "Information Strategy and Analytics",
-    "location": "Saskatoon, Saskatchewan",
-    "dates": "October 2009 to October 2011",
-    "duties": [
-      "Managed external information requests and internal issue tracking and resolution, including quality control",
-      "Managed office computers, peripheral equipment, and supplies",
-      "Developed user guides and documentation"
-    ]
-  },
-  {
-    "title": "Web developer / Technical writer",
-    "organization": "Craig McNaughton (Self-employed)",
-    "location": "Saskatoon, Saskatchewan",
-    "dates": "September 2008 to December 2015",
-    "duties": [
-      "Developed and maintained websites",
-      "Wrote technical documentation and communication",
-      "Consulted on website development"
-    ]
-  },
-  {
-    "title": "Web Developer / Site Administrator",
-    "organization": "Externalgateway.com",
-    "location": "Toronto, Ontario",
-    "dates": "August 2004 to January 2010",
-    "achievements": [
-      "Doubled client base by directly soliciting new clients"
-    ],
-    "duties": [
-      "Developed and maintained company and customers’ websites and managed customer accounts",
-      "Consulted on website development"
-    ]
-  },
-  {
-    "title": [
-      "Senior Web Publisher",
-      "Business Specialist",
-      "Bilingual Call Centre Specialist"
-    ],
-    "organization": "Canadian Imperial Bank of Commerce",
-    "location": "Toronto, Ontario",
-    "dates": [
-      "May 2007 to September 2008",
-      "January 2005 to May 2007",
-      "September 2001 to January 2005"
-    ],
-    "achievements": [
-      "Multiple awards for exceptional performance, productivity, quality, leadership, team performance and teamwork",
-      "Department lead for migration of National Support Line documentation functions",
-      "Learned hardware, software, and network troubleshooting"
-    ],
-    "duties": [
-      "Developed, updated, and published procedures manuals and templates through web-based, SQL Server CMS",
-      "Maintained web-based (ASP/SQL Server) workflow system",
-      "Managed database and server issues, and analyzed business data, to maximize website performance",
-      "Enabled effective communication between project and support teams and user community",
-      "Assisted users with hardware, software, and network issues on personal computers, servers, and peripherals"
-    ]
-  },
-  {
-    "title": [
-      "Night Manager",
-      "Assistant Night Manager"
-    ],
-    "organization": "Fairmont Hotels and Resorts",
-    "department": "The Fairmont Banff Springs",
-    "location": "Banff, Alberta",
-    "dates": [
-      "March 2000 to May 2001",
-      "December 1998 to March 2000"
-    ],
-    "achievements": [
-      "Learned Front Desk and Guest Services operations, including personnel, logistics and inventory management",
-      "Automated a two-hour, daily, manual process for compiling Housekeeping assignments",
-      "Redesigned reports to be produced more quickly with fewer errors, saving over 15 hours weekly",
-      "Documented all Night Reception procedures and processes, which were previously undocumented",
-      "Leadership 2000 and Interaction Management courses: interacting effectively with customers and employees"
-    ],
-    "duties": [
-      "Managed guest problems and queries with authority and diplomacy",
-      "Developed efficient and effective training, management and office procedures for new computer systems",
-      "Managed budget, payroll and productivity: delegating and organizing workload and coaching employees",
-      "Managed computer system procedures and queries, ensuring maximum functionality",
-      "Coordinated and assisted in emergency situations",
-      "Recruited and trained new Front Office employees"
-    ]
-  }
+    {
+        "title": "UI developer",
+        "organization": "EducationPlannerBC",
+        "location": "Victoria, British Columbia",
+        "dates": "October 2019 to present",
+        "duties": [
+            "Develop and maintain user interfaces for two separate products, using React-Redux frameworks and REST microservices",
+            "Consult with multiple stakeholders to determine requirements and evaluate outcomes"
+        ]
+    },
+    {
+        "title": "Software developer",
+        "organization": "University of Victoria",
+        "department": "University Systems",
+        "location": "Victoria, British Columbia",
+        "dates": "April 2016 to October 2019",
+        "duties": [
+            "Analyzed, designed, developed, enhanced, maintained and supported enterprise information systems",
+            "Created documentation related to the implementation of information systems",
+            "Consulted with and trained technical and functional staff on the use of enterprise information systems"
+        ]
+    },
+    {
+        "title": "Programmer",
+        "organization": "University of Saskatchewan",
+        "department": "Student and Enrolment Services",
+        "location": "Saskatoon, Saskatchewan",
+        "dates": "October 2011 to April 2016",
+        "duties": [
+            "Developed and maintained internal web forms and web applications",
+            "Consulted with multiple stakeholders to determine requirements and evaluate outcomes"
+        ]
+    },
+    {
+        "title": "Programmer",
+        "organization": "University of Saskatchewan",
+        "department": "Information Strategy and Analytics",
+        "location": "Saskatoon, Saskatchewan",
+        "dates": "October 2009 to October 2011",
+        "duties": [
+            "Managed external information requests and internal issue tracking and resolution, including quality control",
+            "Managed office computers, peripheral equipment, and supplies",
+            "Developed user guides and documentation"
+        ]
+    },
+    {
+        "title": "Web developer / Technical writer",
+        "organization": "Craig McNaughton (Self-employed)",
+        "location": "Saskatoon, Saskatchewan",
+        "dates": "September 2008 to December 2015",
+        "duties": [
+            "Developed and maintained websites",
+            "Wrote technical documentation and communication",
+            "Consulted on website development"
+        ]
+    },
+    {
+        "title": "Web Developer / Site Administrator",
+        "organization": "Externalgateway.com",
+        "location": "Toronto, Ontario",
+        "dates": "August 2004 to January 2010",
+        "achievements": [
+            "Doubled client base by directly soliciting new clients"
+        ],
+        "duties": [
+            "Developed and maintained company and customers’ websites and managed customer accounts",
+            "Consulted on website development"
+        ]
+    },
+    {
+        "title": [
+            "Senior Web Publisher",
+            "Business Specialist",
+            "Bilingual Call Centre Specialist"
+        ],
+        "organization": "Canadian Imperial Bank of Commerce",
+        "location": "Toronto, Ontario",
+        "dates": [
+            "May 2007 to September 2008",
+            "January 2005 to May 2007",
+            "September 2001 to January 2005"
+        ],
+        "achievements": [
+            "Multiple awards for exceptional performance, productivity, quality, leadership, team performance and teamwork",
+            "Department lead for migration of National Support Line documentation functions",
+            "Learned hardware, software, and network troubleshooting"
+        ],
+        "duties": [
+            "Developed, updated, and published procedures manuals and templates through web-based, SQL Server CMS",
+            "Maintained web-based (ASP/SQL Server) workflow system",
+            "Managed database and server issues, and analyzed business data, to maximize website performance",
+            "Enabled effective communication between project and support teams and user community",
+            "Assisted users with hardware, software, and network issues on personal computers, servers, and peripherals"
+        ]
+    },
+    {
+        "title": [
+            "Night Manager",
+            "Assistant Night Manager"
+        ],
+        "organization": "Fairmont Hotels and Resorts",
+        "department": "The Fairmont Banff Springs",
+        "location": "Banff, Alberta",
+        "dates": [
+            "March 2000 to May 2001",
+            "December 1998 to March 2000"
+        ],
+        "achievements": [
+            "Learned Front Desk and Guest Services operations, including personnel, logistics and inventory management",
+            "Automated a two-hour, daily, manual process for compiling Housekeeping assignments",
+            "Redesigned reports to be produced more quickly with fewer errors, saving over 15 hours weekly",
+            "Documented all Night Reception procedures and processes, which were previously undocumented",
+            "Leadership 2000 and Interaction Management courses: interacting effectively with customers and employees"
+        ],
+        "duties": [
+            "Managed guest problems and queries with authority and diplomacy",
+            "Developed efficient and effective training, management and office procedures for new computer systems",
+            "Managed budget, payroll and productivity: delegating and organizing workload and coaching employees",
+            "Managed computer system procedures and queries, ensuring maximum functionality",
+            "Coordinated and assisted in emergency situations",
+            "Recruited and trained new Front Office employees"
+        ]
+    }
 ]
