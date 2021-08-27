@@ -1,29 +1,53 @@
 [[redirects]]
-  from = "/albertcss/*"
-  to = "https://nifty-turing-6bafb1.netlify.app/albertcss/:splat"
-  status = 200
-  force = true
- 
+from = "/albertcss/*"
+to = "https://nifty-turing-6bafb1.netlify.app/albertcss/:splat"
+status = 200
+force = true
+
 [[redirects]]
-  from = "/cryptogram/*"
-  to = "https://agitated-nightingale-d3b1fa.netlify.app/cryptogram/:splat"
-  status = 200
-  force = true
- 
+from = "/assets/*"
+to = "https://cdn.craigmcn.com/:splat"
+status = 200
+force = true
+
 [[redirects]]
-  from = "/currency/*"
-  to = "https://keen-haibt-ecf9f4.netlify.app/currency/:splat"
-  status = 200
-  force = true
- 
+from = "/colours/*"
+to = "https://priceless-payne-88b1ed.netlify.app/colours/:splat"
+status = 200
+force = true
+
 [[redirects]]
-  from = "/markdown/*"
-  to = "https://hardcore-wiles-1aa5f7.netlify.app/markdown/:splat"
-  status = 200
-  force = true
- 
+from = "/cryptogram/*"
+to = "https://agitated-nightingale-d3b1fa.netlify.app/cryptogram/:splat"
+status = 200
+force = true
+
 [[redirects]]
-  from = "/unixtime/*"
-  to = "https://xenodochial-euclid-5aa925.netlify.app/unixtime/:splat"
-  status = 200
-  force = true
+from = "/currency/*"
+to = "https://keen-haibt-ecf9f4.netlify.app/currency/:splat"
+status = 200
+force = true
+
+[[redirects]]
+from = "/files/*"
+to = "https://gifted-shirley-8182af.netlify.app/files/:splat"
+status = 200
+force = true
+
+[[redirects]]
+from = "/markdown/*"
+to = "https://hardcore-wiles-1aa5f7.netlify.app/markdown/:splat"
+status = 200
+force = true
+
+[[redirects]]
+from = "/math-tiles/*"
+to = "https://agitated-morse-adece5.netlify.app/math-tiles/:splat"
+status = 200
+force = true
+
+[[redirects]]
+from = "/unixtime/*"
+to = "https://xenodochial-euclid-5aa925.netlify.app/unixtime/:splat"
+status = 200
+force = true
