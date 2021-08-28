@@ -35,6 +35,12 @@ status = 200
 force = true
 
 [[redirects]]
+from = "/hpab/*"
+to = "https://condescending-stonebraker-ff915b.netlify.app/hpab/:splat"
+status = 200
+force = true
+
+[[redirects]]
 from = "/markdown/*"
 to = "https://hardcore-wiles-1aa5f7.netlify.app/markdown/:splat"
 status = 200
