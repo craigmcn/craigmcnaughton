@@ -1,13 +1,13 @@
 [[redirects]]
-from = "/albertcss"
-to = "/albertcss/"
-status = 301
-
-[[redirects]]
 from = "/albertcss/*"
 to = "https://nifty-turing-6bafb1.netlify.app/albertcss/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/albertcss"
+to = "/albertcss/"
+status = 301
 
 [[redirects]]
 from = "/assets/*"
