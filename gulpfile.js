@@ -64,7 +64,8 @@ gulp.task('js', function () {
         debug: env === 'production'
     });
 
-    return b.transform(
+    return b
+        .transform(
             babelify.configure({
                 presets: ['@babel/preset-env'],
                 sourceMaps: env === 'production'

@@ -5,11 +5,6 @@ status = 200
 force = true
 
 [[redirects]]
-from = "/albertcss"
-to = "/albertcss/"
-status = 301
-
-[[redirects]]
 from = "/assets/*"
 to = "https://cdn.craigmcn.com/:splat"
 status = 200
