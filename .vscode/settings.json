@@ -8,4 +8,13 @@
     "editor.formatOnSave": true,
     "editor.detectIndentation": false,
     "files.insertFinalNewline": true,
+    "cSpell.words": [
+        "browserslist",
+        "cleancss",
+        "craigmcnaughton",
+        "favicons",
+        "gulpif",
+        "purgecss",
+        "tailwindcss"
+    ],
 }

@@ -1,50 +1,50 @@
 {
-  "name": "craigmcnaughton",
-  "version": "1.0.0",
-  "description": "Personal information website",
-  "main": "src/index.html",
-  "scripts": {
-    "build": "gulp build --env=production",
-    "dev": "gulp build",
-    "serve": "gulp serve"
-  },
-  "keywords": [
-    "craig",
-    "mcnaughton"
-  ],
-  "author": "Craig McNaughton",
-  "license": "SEE LICENSE IN LICENSE",
-  "browserslist": [
-    "> 1%",
-    "last 2 versions"
-  ],
-  "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "autoprefixer": "^10.3.1",
-    "babelify": "^10.0.0",
-    "browser-sync": "^2.27.4",
-    "browserify": "^17.0.0",
-    "eslint": "^7.32.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.24.2",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^5.1.0",
-    "gulp": "^4.0.2",
-    "gulp-clean-css": "^4.3.0",
-    "gulp-hash": "^4.2.2",
-    "gulp-htmlmin": "^5.0.1",
-    "gulp-if": "^3.0.0",
-    "gulp-nunjucks-render": "^2.2.3",
-    "gulp-postcss": "^9.0.0",
-    "gulp-purgecss": "^4.0.3",
-    "gulp-rename": "^2.0.0",
-    "gulp-rev-rewrite": "^4.0.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-uglify": "^3.0.2",
-    "minimist": "^1.2.5",
-    "tailwindcss": "^2.2.4",
-    "vinyl-buffer": "^1.0.1",
-    "vinyl-source-stream": "^2.0.0"
-  }
+    "name": "craigmcnaughton",
+    "version": "1.0.1",
+    "description": "Personal information website",
+    "main": "src/index.html",
+    "scripts": {
+        "build": "gulp build --env=production",
+        "dev": "gulp build",
+        "serve": "gulp serve"
+    },
+    "keywords": [
+        "craig",
+        "mcnaughton"
+    ],
+    "author": "Craig McNaughton",
+    "license": "SEE LICENSE IN LICENSE",
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "devDependencies": {
+        "@babel/core": "^7.15.0",
+        "@babel/preset-env": "^7.15.0",
+        "autoprefixer": "^10.3.1",
+        "babelify": "^10.0.0",
+        "browser-sync": "^2.27.4",
+        "browserify": "^17.0.0",
+        "eslint": "^7.32.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.24.2",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^5.1.0",
+        "gulp": "^4.0.2",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-hash": "^4.2.2",
+        "gulp-htmlmin": "^5.0.1",
+        "gulp-if": "^3.0.0",
+        "gulp-nunjucks-render": "^2.2.3",
+        "gulp-postcss": "^9.0.0",
+        "gulp-purgecss": "^4.0.3",
+        "gulp-rename": "^2.0.0",
+        "gulp-rev-rewrite": "^4.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-uglify": "^3.0.2",
+        "minimist": "^1.2.5",
+        "tailwindcss": "^2.2.4",
+        "vinyl-buffer": "^1.0.1",
+        "vinyl-source-stream": "^2.0.0"
+    }
 }

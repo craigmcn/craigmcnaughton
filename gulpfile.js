@@ -1,9 +1,13 @@
-const { readFileSync } = require('fs');
+const {
+    readFileSync
+} = require('fs');
 const gulp = require('gulp');
 const gulpif = require('gulp-if');
 const hash = require('gulp-hash');
 const rewrite = require('gulp-rev-rewrite');
-const hashOptions = { template: '<%= name %>.<%= hash %><%= ext %>' };
+const hashOptions = {
+    template: '<%= name %>.<%= hash %><%= ext %>'
+};
 const hashFilename = 'hash-manifest.json';
 const argv = require('minimist')(process.argv.slice(2));
 const env = argv.env ? argv.env : 'development';
@@ -61,15 +65,17 @@ gulp.task('js', function () {
     });
 
     return b.transform(
-        babelify.configure({
-            presets: ['@babel/preset-env'],
-            sourceMaps: env === 'production'
-        })
-    )
+            babelify.configure({
+                presets: ['@babel/preset-env'],
+                sourceMaps: env === 'production'
+            })
+        )
         .bundle()
         .pipe(source('js/scripts.js'))
         .pipe(buffer())
-        .pipe(gulpif(env === 'production', sourcemaps.init({ loadMaps: true })))
+        .pipe(gulpif(env === 'production', sourcemaps.init({
+            loadMaps: true
+        })))
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(gulpif(env === 'production', sourcemaps.write('./')))
         .pipe(hash(hashOptions))
@@ -116,8 +122,12 @@ gulp.task('html', function () {
             path: ['src/templates'],
             manageEnv: manageEnvironment
         }))
-        .pipe(rewrite({ manifest }))
-        .pipe(gulpif(env === 'production', htmlmin({ collapseWhitespace: true })))
+        .pipe(rewrite({
+            manifest
+        }))
+        .pipe(gulpif(env === 'production', htmlmin({
+            collapseWhitespace: true
+        })))
         .pipe(gulp.dest(output[env]));
 });
 
