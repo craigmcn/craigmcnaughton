@@ -1,4 +1,9 @@
 [[redirects]]
+from = "/albertcss"
+to = "https://nifty-turing-6bafb1.netlify.app/albertcss/"
+status = 301
+
+[[redirects]]
 from = "/albertcss/*"
 to = "https://nifty-turing-6bafb1.netlify.app/albertcss/:splat"
 status = 200
