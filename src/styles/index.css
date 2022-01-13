@@ -11,7 +11,7 @@
 
 .jumbotron__profile-text {
     backdrop-filter: blur(4px);
-    background-color: rgba(54, 54, 64,.4);
+    background-color: rgba(54, 54, 64, 0.4); /* --grey900 */
     color: var(--grey100);
     max-width: 60em;
 }
@@ -19,6 +19,12 @@
 @media (min-width: 768px) {
     .jumbotron__profile-text {
         border-radius: 4px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .jumbotron__profile-text {
+        background-color: rgba(235, 235, 239, 0.4); /* --grey900 */
     }
 }
 
