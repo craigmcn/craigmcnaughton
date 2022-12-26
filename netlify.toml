@@ -63,3 +63,9 @@ from = "/words/*"
 to = "https://gracious-hamilton-bcda9d.netlify.app/words/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/number-magic/*"
+to = "https://startling-alpaca-d906b9.netlify.app/number-magic/:splat"
+status = 200
+force = true
