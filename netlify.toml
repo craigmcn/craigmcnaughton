@@ -69,3 +69,9 @@ from = "/number-magic/*"
 to = "https://startling-alpaca-d906b9.netlify.app/number-magic/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/order/*"
+to = "https://bejewelled-baklava-c860a7.netlify.app/order/:splat"
+status = 200
+force = true
