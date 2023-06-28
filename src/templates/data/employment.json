@@ -1,9 +1,22 @@
 [
     {
+        "title": "Senior full-stack developer",
+        "organization": "Animikii, Inc.",
+        "location": "Victoria, British Columbia",
+        "dates": "October 2021 to present",
+        "achievements": [
+            "Learned Ruby on Rails; upgraded projects from Rails 3 to Rails 7"
+        ],
+        "duties": [
+            "Develop and maintain software applications using React-Redux frameworks and Ruby on Rails",
+            "Work with diverse project teams to determine requirements and evaluate outcomes"
+        ]
+    },
+    {
         "title": "UI developer",
         "organization": "EducationPlannerBC",
         "location": "Victoria, British Columbia",
-        "dates": "October 2019 to present",
+        "dates": "October 2019 to October 2021",
         "duties": [
             "Develop and maintain user interfaces for two separate products, using React-Redux frameworks and REST microservices",
             "Consult with multiple stakeholders to determine requirements and evaluate outcomes"
