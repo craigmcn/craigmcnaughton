@@ -5,11 +5,13 @@
         "location": "Victoria, British Columbia",
         "dates": "October 2021 to present",
         "achievements": [
-            "Learned Ruby on Rails; upgraded projects from Rails 3 to Rails 7"
+            "Learned Ruby on Rails; upgraded projects from Rails 3 to Rails 7",
+            "Technical lead for large learning management system"
         ],
         "duties": [
             "Develop and maintain software applications using React-Redux frameworks and Ruby on Rails",
-            "Work with diverse project teams to determine requirements and evaluate outcomes"
+            "Work with diverse project teams to determine requirements and evaluate outcomes",
+            "Supervise junior developers on project team"
         ]
     },
     {
@@ -17,6 +19,9 @@
         "organization": "EducationPlannerBC",
         "location": "Victoria, British Columbia",
         "dates": "October 2019 to October 2021",
+        "achievements": [
+            "Learned basic C# for .NET servers"
+        ],
         "duties": [
             "Develop and maintain user interfaces for two separate products, using React-Redux frameworks and REST microservices",
             "Consult with multiple stakeholders to determine requirements and evaluate outcomes"
@@ -28,6 +33,10 @@
         "department": "University Systems",
         "location": "Victoria, British Columbia",
         "dates": "April 2016 to October 2019",
+        "achievements": [
+            "Learned Grails and automated front-end testing",
+            "Front-end lead for internal grant application and management system"
+        ],
         "duties": [
             "Analyzed, designed, developed, enhanced, maintained and supported enterprise information systems",
             "Created documentation related to the implementation of information systems",
@@ -40,6 +49,9 @@
         "department": "Student and Enrolment Services",
         "location": "Saskatoon, Saskatchewan",
         "dates": "October 2011 to April 2016",
+        "achievements": [
+            "Redeveloped PHP applications for better maintainability and accessibility"
+        ],
         "duties": [
             "Developed and maintained internal web forms and web applications",
             "Consulted with multiple stakeholders to determine requirements and evaluate outcomes"
@@ -51,6 +63,9 @@
         "department": "Information Strategy and Analytics",
         "location": "Saskatoon, Saskatchewan",
         "dates": "October 2009 to October 2011",
+        "achievements": [
+            "Developed user interface for data analysis and reporting"
+        ],
         "duties": [
             "Managed external information requests and internal issue tracking and resolution, including quality control",
             "Managed office computers, peripheral equipment, and supplies",
