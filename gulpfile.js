@@ -1,33 +1,44 @@
-const {
-    readFileSync,
-} = require('fs')
-const gulp = require('gulp')
-const gulpif = require('gulp-if')
-const hash = require('gulp-hash')
-const rewrite = require('gulp-rev-rewrite')
+import { readFileSync } from 'fs'
+import path from 'path'
+import gulp from 'gulp'
+import gulpif from 'gulp-if'
+import hash from 'gulp-hash'
+import rewrite from 'gulp-rev-rewrite'
+import parseArgs from 'minimist'
+import browserSyncCreate from 'browser-sync'
+import postcss from 'gulp-postcss'
+import autoprefixer from 'autoprefixer'
+import tailwindcss from 'tailwindcss'
+import purgecss from 'gulp-purgecss'
+import cleancss from 'gulp-clean-css'
+import rename from 'gulp-rename'
+import browserify from 'browserify'
+import babelify from 'babelify'
+import source from 'vinyl-source-stream'
+import buffer from 'vinyl-buffer'
+import sourcemaps from 'gulp-sourcemaps'
+import uglify from 'gulp-uglify'
+import render from 'gulp-nunjucks-render'
+import htmlmin from 'gulp-htmlmin'
+
 const hashOptions = {
     template: '<%= name %>.<%= hash %><%= ext %>',
 }
 const hashFilename = 'hash-manifest.json'
-const argv = require('minimist')(process.argv.slice(2))
+const argv = parseArgs(process.argv.slice(2))
 const env = argv.env ? argv.env : 'development'
 const output = {
     development: './tmp',
     production: './dist',
 }
-const browserSync = require('browser-sync').create()
+const browserSync = browserSyncCreate.create()
+const __dirname = path.resolve()
 
 // CSS
 gulp.task('css', function () {
-    const postcss = require('gulp-postcss')
-    const tailwindcss = require('tailwindcss')
-    const purgecss = require('gulp-purgecss')
-    const cleancss = require('gulp-clean-css')
-    const rename = require('gulp-rename')
-
     return gulp
         .src('./src/styles/index.css')
-        .pipe(postcss([tailwindcss('tailwind.config.js'), require('autoprefixer')]))
+        .pipe(postcss([tailwindcss('tailwind.config.js'), autoprefixer()]))
         .pipe(
             gulpif(
                 env === 'production',
@@ -51,13 +62,6 @@ gulp.task('css', function () {
 })
 
 // JS
-const browserify = require('browserify')
-const babelify = require('babelify')
-const source = require('vinyl-source-stream')
-const buffer = require('vinyl-buffer')
-const sourcemaps = require('gulp-sourcemaps')
-const uglify = require('gulp-uglify')
-
 gulp.task('js', function () {
     const b = browserify({
         entries: 'src/scripts/scripts.js',
@@ -105,9 +109,7 @@ gulp.task('favicon', function () {
 
 // HTML
 gulp.task('html', function () {
-    const render = require('gulp-nunjucks-render')
     const manifest = readFileSync(`${output[env]}/${hashFilename}`)
-    const htmlmin = require('gulp-htmlmin')
 
     const manageEnvironment = function (environment) {
         environment.addFilter('json', function (value) {
