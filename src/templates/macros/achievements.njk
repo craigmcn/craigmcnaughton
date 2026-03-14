@@ -1,0 +1,8 @@
+<!-- only one parameter - the JSON object - which is applied to macro using dot notation -->
+{%- macro achievementsSection(arguments) %}
+    <ul class="list-square mb-6 ml-4">
+        {% for achievement in arguments %}
+            <li>{{ achievement }}</li>
+        {% endfor %}
+    </ul>
+{%- endmacro %}

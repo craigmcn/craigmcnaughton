@@ -1,9 +1,63 @@
 {% extends "layout.njk" %}
 
 {% block head %}
-<title>Resumé - Craig McNaughton</title>
-<meta name="keywords" content="Craig McNaughton, software developer, software development, portfolio, resume, resumé">
-<meta name="description" content="Craig McNaughton's software developer resumé">
+<title>Craig McNaughton | Senior Software Developer | React & Modern Web Applications</title>
+
+<meta name="description" content="Senior software developer specializing in React, Redux, and modern web architecture
+    with strong Ruby on Rails backend experience and focus on accessibility.">
+<meta name="keywords" content="Craig McNaughton, senior software developer, senior frontend developer, React developer,
+    React engineer, Redux, JavaScript, TypeScript, Ruby on Rails, frontend architecture, component libraries,
+    web accessibility, WCAG, UI development, REST APIs, full stack developer">
+<meta property="og:title" content="Craig McNaughton – Senior Software Developer">
+<meta property="og:description" content="Senior software developer focused on frontend architecture, accessibility,
+    and modern web applications with Ruby on Rails backend experience.">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Craig McNaughton",
+  "jobTitle": "Senior Frontend Software Developer",
+  "url": "https://www.craigmcn.com",
+  "image": "https://www.craigmcn.com/images/profile.jpg",
+  "email": "mailto:craig@craigmcnaughton.ca",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Victoria",
+    "addressRegion": "BC",
+    "addressCountry": "Canada"
+  },
+  "sameAs": [
+    "https://github.com/craigmcn"
+  ],
+  "knowsAbout": [
+    "React",
+    "Redux",
+    "JavaScript",
+    "TypeScript",
+    "Ruby on Rails",
+    "Frontend Architecture",
+    "Web Accessibility",
+    "REST APIs",
+    "UI Development",
+    "Component Libraries"
+  ],
+  "alumniOf": [
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "University of Saskatchewan"
+    },
+    {
+      "@type": "CollegeOrUniversity",
+      "name": "Humber College Institute of Technology & Advanced Learning"
+    }
+  ],
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Animikii"
+  }
+}
+</script>
 {% endblock %}
 
 {% block styles %}
@@ -13,20 +67,44 @@
 {% block content %}
 <main class="container mt-8 mx-2 md:mx-auto md:max-w-3xl">
     <h1 class="text-2xl">Craig McNaughton</h1>
-    <p>craig at craigmcnaughton dot ca</p>
+    <p>craig at craigmcnaughton dot ca<br />
+        <i class="fa-brands fa-github" role="img" aria-label="Github"></i>
+        <a href="https://github.com/craigmcn" target="_blank" rel="noopener noreferrer">github.com/craigmcn</a></p>
 
     <section class="mt-6">
-        <h2 class="text-sm uppercase py-2 text-gray-700">Summary</h2>
-        <p>In over 15 years as a software developer, seven years in technical support and documentation, I have
-            developed significant skills in managing projects, challenges and customer service. I’ve worked as technical
-            lead, supervising junior team members and providing technical advice to multi-disciplinary Agile teams. My
-            education as an engineer and as a technical writer complements those skills with an ability to see
-            documentation and technology from the end-user perspective. I keep myself updated on best practices and
-            changing technology to ensure that I can provide the best product possible.</p>
+        <h2 class="uppercase py-2 text-gray-700">Professional Summary</h2>
+        <p>Senior Software Developer specializing in frontend development with React, Redux, JavaScript, and TypeScript.
+            Experienced in designing reusable component architectures, implementing design systems from Figma, and
+            building accessible web applications that meet WCAG standards. Strong full-stack background with Ruby on
+            Rails and REST APIs.</p>
+        <p>Technical lead experienced working with small Agile teams, mentoring developers, and delivering maintainable
+            software systems.</p>
     </section>
 
     <section class="mt-6 border-t">
-        <h2 class="text-sm uppercase py-2 text-gray-700">Employment</h2>
+        <h2 class="uppercase py-2 text-gray-700">Selected Engineering Achievements</h2>
+        {% set achievementsData %}
+        {% include 'data/achievements.json' %}
+        {% endset %}
+        {% import 'macros/achievements.njk' as achievements %}
+        {% set compiled = (achievementsData | json) %}
+        {{ achievements.achievementsSection(compiled) }}
+    </section>
+
+    <section class="mt-6 border-t">
+        <h2 class="uppercase py-2 text-gray-700">Core Technical Skills</h2>
+        {% set technicalSkillsData %}
+        {% include 'data/technicalSkills.json' %}
+        {% endset %}
+        {% import 'macros/technicalSkills.njk' as technicalSkills %}
+        {% set compiled = (technicalSkillsData | json) %}
+        {% for items in compiled %}
+        {{ technicalSkills.technicalSkillsSection(items) }}
+        {% endfor %}
+    </section>
+
+    <section class="mt-6 border-t">
+        <h2 class="uppercase py-2 text-gray-700">Professional Experience</h2>
         {% set employmentData %}
         {% include 'data/employment.json' %}
         {% endset %}
@@ -36,28 +114,31 @@
         {{ employment.employmentSection(items) }}
         {% endfor %}
 
+        <h3 class="text-sm uppercase py-2 text-gray-700">Additional Earlier Experience</h3>
+        <ul class="list-inside list-square">
+            <li>Programmer (University of Saskatchewan)</li>
+            <li>Web Developer / Technical Writer (Self-employed)</li>
+            <li>Senior Web Publisher / Business Specialist / Call Centre Specialist (CIBC)</li>
+        </ul>
+
     </section>
 
     <section class="mt-6 border-t">
-        <h2 class="text-sm uppercase py-2 text-gray-700">Education</h2>
+        <h2 class="uppercase py-2 text-gray-700">Education</h2>
 
         <article class="mb-6">
             <div class="flex flex-col mb-2">
                 <div class="flex mb-0">
-                    <span class="font-bold">Technical Writing Certificate</span>
-                    <span class="text-sm text-gray-500 ml-auto">2006 to 2008</span>
+                    <span class="font-bold">Technical Writing Certificate (Honours)</span>
                 </div>
                 <div class="flex items-baseline mb-0 text-gray-500">
                     <span>
                         Humber College Institute of Technology & Advanced Learning
                     </span>
-                    <span class="text-sm ml-auto">Toronto, Ontario</span>
+                    <span class="ml-auto text-sm">Toronto, ON</span>
                 </div>
             </div>
             <ul class="list-inside list-square">
-                <li>Completed with honours</li>
-            </ul>
-            <ul class="list-inside list-disc ml-4">
                 <li>Technical writing fundamentals, including editing, project management, marketing and HTML</li>
             </ul>
         </article>
@@ -65,68 +146,32 @@
         <article class="mb-6">
             <div class="flex flex-col mb-2">
                 <div class="flex mb-0">
-                    <span class="font-bold">Bachelor of Science in Engineering</span>
-                    <span class="text-sm text-gray-500 ml-auto">1992 to 1997</span>
+                    <span class="font-bold">Bachelor of Science in Engineering (Chemical Engineering)</span>
                 </div>
                 <div class="flex items-baseline mb-0 text-gray-500">
                     <span>
                         University of Saskatchewan
                     </span>
-                    <span class="text-sm ml-auto">Saskatoon, Saskatchewan</span>
+                    <span class="ml-auto text-sm">Saskatoon, SK</span>
                 </div>
             </div>
-            <ul class="list-inside list-square">
-                <li>Chemical Engineering</li>
-            </ul>
         </article>
     </section>
 
     <section class="mt-6 border-t">
-        <h2 class="text-sm uppercase py-2 text-gray-700">Skills</h2>
-
-        <h3 class="text-sm py-2 text-gray-700">Technical</h3>
-
-        <ul class="list-inside list-square">
-            <li>Web development: Ruby on Rails, Grails, PHP, ASP, HTML, Javascript/TypeScript, VBScript, jQuery
-                <ul class="list-inside list-disc ml-4">
-                    <li>Environments: Dreamweaver, EditPlus, IntelliJ, Sublime Text, UltraEdit, Visual Studio Code</li>
-                </ul>
-            </li>
-            <li>Web design: CSS, SASS; Photoshop, GIMP</li>
-            <li>Frameworks: Bootstrap, React, Tailwind</li>
-            <li>Database: Access, MySQL, PostgreSQL, SQL Server, GraphQL</li>
-            <li>Content management: Cascade, Ektron CMS300, Microsoft Sharepoint, Wordpress</li>
-            <li>Operating systems: IBM OS/2 Warp , Linux, Mac, MS-DOS, Windows</li>
-            <li>Word processing: OpenOffice Writer, Pages, Word, WordPerfect, Works</li>
-            <li>Spreadsheet: Excel, Lotus 1-2-3, Numbers, OpenOffice Calc, Quattro Pro</li>
-            <li>Presentation: Keynote, OpenOffice Impress, PowerPoint</li>
-            <li>Project management: Microsoft Project, Agile principles</li>
-            <li>Scheduling: EnCampus Suite (Infosilem)</li>
-        </ul>
-
-        <h3 class="text-sm py-2 text-gray-700">Portfolio</h3>
+        <h2 class="uppercase py-2 text-gray-700">Projects and Portfolio</h2>
 
         <ul class="list-inside list-square mb-6">
-            <li>
-                <a class="underline" href="https://www.ppfhouse.com/">ppfhouse.com</a>: a combination of websites for
-                three brothers providing music, art, animation and video services
-            </li>
             <li>
                 <a class="underline" href="https://github.com/craigmcn/">github.com/craigmcn</a>: personal Github
-                repository of projects and interests
+                repository of software development projects
             </li>
             <li>
-                <a class="underline" href="https://www.craigmcn.com/">craigmcn.com</a>: personal projects
+                <a class="underline" href="https://www.craigmcn.com/">craigmcn.com</a>: personal development work and
+                experiments
             </li>
         </ul>
 
-        <ul class="list-inside list-square mb-6">
-            <li>Perform hardware and software maintenance and upgrades on personal computers</li>
-            <li>Developed Visual Basic macros at CIBC for automation, ease-of-use and consistency in applications</li>
-            <li>Developed and maintained information database at CIBC</li>
-            <li>Developed and maintained word-processing and spreadsheet documents for Accounting, Food and Beverage,
-                Front Office and Housekeeping departments at the Fairmont Banff Springs</li>
-        </ul>
     </section>
 </main>
 

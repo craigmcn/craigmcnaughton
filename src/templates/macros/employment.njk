@@ -27,17 +27,17 @@
             </div>
         </div>
 
-        {% if arguments.achievements | length %}
-            <ul class="list-inside list-square">
-                {% for achievement in arguments.achievements %}
-                    <li>{{ achievement }}</li>
-                {% endfor %}
-            </ul>
+        {% if arguments.lede | length %}
+            {% for item in arguments.lede %}
+                <p class="mb-3">{{ item }}</p>
+            {% endfor %}
         {% endif %}
         <ul class="list-inside list-disc ml-4">
             {% for duty in arguments.duties %}
                 <li>{{ duty }}</li>
             {% endfor %}
         </ul>
+
+        <p class="mt-2">Technologies: {{ arguments.technologies | join(', ') }}</p>
     </article>
 {%- endmacro %}
