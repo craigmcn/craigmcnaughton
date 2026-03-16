@@ -1,0 +1,26 @@
+[
+    {
+        "category": "Frontend",
+        "skills": [
+            "React", "Redux", "Redux Toolkit", "JavaScript (ES6+)", "TypeScript", "HTML5", "CSS3", "Tailwind CSS", "Bootstrap", "CSS Modules", "SCSS"
+        ]
+    },
+    {
+        "category": "Frontend Architecture",
+        "skills": [
+            "Component-driven development", "reusable component libraries", "design system implementation", "performance optimization"
+        ]
+    },
+    {
+        "category": "Backend",
+        "skills": [
+            "Ruby on Rails", "REST APIs", "GraphQL (familiar)", "PostgreSQL", "MySQL", "PHP"
+        ]
+    },
+    {
+        "category": "Testing & Tooling",
+        "skills": [
+            "React Testing Library", "Cypress", "Webpack", "Vite", "GitHub Actions", "Git", "ESLint"
+        ]
+    }
+]

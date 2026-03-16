@@ -1,0 +1,7 @@
+<!-- only one parameter - the JSON object - which is applied to macro using dot notation -->
+{%- macro technicalSkillsSection(arguments) %}
+    <article class="mb-4">
+        <h3 class="font-bold text-sm text-gray-700">{{ arguments.category }}</h3>
+        <p>{{ arguments.skills | join(', ') }}</p>
+    </article>
+{%- endmacro %}
