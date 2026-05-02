@@ -75,3 +75,9 @@ from = "/order/*"
 to = "https://bejewelled-baklava-c860a7.netlify.app/order/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/sudoku/*"
+to = "https://boisterous-profiterole-905216.netlify.app/sudoku/:splat"
+status = 200
+force = true
