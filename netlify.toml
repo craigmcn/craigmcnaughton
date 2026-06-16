@@ -29,10 +29,10 @@ status = 200
 force = true
 
 [[redirects]]
-  from = "/api/exchange-rates/*"
-  to = "https://keen-haibt-ecf9f4.netlify.app/api/exchange-rates/:splat"
-  status = 200
-  force = true
+from = "/api/exchange-rates/*"
+to = "https://keen-haibt-ecf9f4.netlify.app/api/exchange-rates/:splat"
+status = 200
+force = true
 
 [[redirects]]
 from = "/files/*"
