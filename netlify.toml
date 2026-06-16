@@ -29,6 +29,12 @@ status = 200
 force = true
 
 [[redirects]]
+from = "/api/exchange-rates/*"
+to = "https://keen-haibt-ecf9f4.netlify.app/api/exchange-rates/:splat"
+status = 200
+force = true
+
+[[redirects]]
 from = "/files/*"
 to = "https://gifted-shirley-8182af.netlify.app/files/:splat"
 status = 200
