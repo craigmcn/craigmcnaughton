@@ -87,3 +87,9 @@ from = "/sudoku/*"
 to = "https://boisterous-profiterole-905216.netlify.app/sudoku/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/wordle-helper/*"
+to = "https://extraordinary-taiyaki-3ca891.netlify.app/wordle-helper/:splat"
+status = 200
+force = true
