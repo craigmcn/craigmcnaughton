@@ -99,3 +99,9 @@ from = "/wordle-helper/*"
 to = "https://extraordinary-taiyaki-3ca891.netlify.app/wordle-helper/:splat"
 status = 200
 force = true
+
+[[redirects]]
+from = "/wordwright/*"
+to = "https://benevolent-nasturtium-60a92a.netlify.app/wordwright/:splat"
+status = 200
+force = true
