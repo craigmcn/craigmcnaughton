@@ -41,6 +41,12 @@ status = 200
 force = true
 
 [[redirects]]
+from = "/fivefold/*"
+to = "https://endearing-blancmange-0cb3b7.netlify.app/fivefold/:splat"
+status = 200
+force = true
+
+[[redirects]]
 from = "/hpab/*"
 to = "https://condescending-stonebraker-ff915b.netlify.app/hpab/:splat"
 status = 200
