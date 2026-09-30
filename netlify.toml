@@ -89,6 +89,12 @@ status = 200
 force = true
 
 [[redirects]]
+from = "/queen-bee/*"
+to = "https://remarkable-kleicha-f95610.netlify.app/queen-bee/:splat"
+status = 200
+force = true
+
+[[redirects]]
 from = "/sappers/*"
 to = "https://dashing-starlight-6b22bc.netlify.app/sappers/:splat"
 status = 200
