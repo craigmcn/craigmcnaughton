@@ -19,6 +19,11 @@
   - Screenshot: `src/img/sudoku.png` added
 - Removed all `section--alt` from individual `<section>` elements — `<main class="sections--alternating">` handles the alternating pattern via CSS; per-section modifier was redundant
 
+## Completed (2026-10-15)
+
+- Added `/.well-known/security.txt` (RFC 9116): source in `src/well-known/`, copied by the `well-known` gulp task
+- Contact is `security@craigmcn.com` (covered by the Fastmail `*@craigmcn.com` catch-all)
+
 ## Next / In Progress
 
 - None
@@ -28,6 +33,8 @@
 - Kept **AWS badge on currency** — project uses a custom AWS API Gateway reverse proxy for an HTTP-only exchange rate API
 - Replaced HTML5/JavaScript with React/TypeScript for projects that had fully migrated (colours, order) rather than adding alongside the old badges
 - Dropped `section--alt` per-section modifier in favour of the parent `sections--alternating` class — cleaner, single source of truth for the alternating style
+- **security.txt served by Netlify, not Cloudflare** — Cloudflare's Security.txt feature only works on proxied hostnames, and apex/`www` are DNS-only to Netlify. Ignore Cloudflare's "Security.txt not configured" alert
+- **Renew `Expires` in security.txt before 2027-10-01** — RFC 9116 says it should be under a year out; a stale file is treated as invalid
 
 ## Open Questions
 

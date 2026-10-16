@@ -107,6 +107,13 @@ gulp.task('favicon', function () {
         .pipe(gulpif(env === 'production', gulp.dest(output[env])))
 })
 
+// Well-known (security.txt, RFC 9116)
+// Source dir isn't dot-prefixed because gulp.src skips dotfiles by default
+gulp.task('well-known', function () {
+    return gulp.src('./src/well-known/*')
+        .pipe(gulp.dest(`${output[env]}/.well-known`))
+})
+
 // HTML
 gulp.task('html', function () {
     const manifest = readFileSync(`${output[env]}/${hashFilename}`)
@@ -135,7 +142,7 @@ gulp.task('html', function () {
 })
 
 // Build
-gulp.task('build', gulp.series('css', 'js', 'img', 'html', 'favicon'))
+gulp.task('build', gulp.series('css', 'js', 'img', 'html', 'favicon', 'well-known'))
 
 // Reload browser
 gulp.task('reload', (done) => {
